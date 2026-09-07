@@ -31,8 +31,6 @@ public class AuthenticationHandler implements HttpHandler {
             if (conexion != null) {
                 System.out.println("¡Conexión exitosa a la base de datos!");
             }
-            System.out.println("Conexión exitosa a MySQL.\n");
-
             // obtener usuario y contraseña de la bd
             String query = "SELECT * FROM users WHERE username = '" + user + "'";
             Statement stmt = conexion.createStatement();
