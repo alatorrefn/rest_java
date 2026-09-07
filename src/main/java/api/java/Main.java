@@ -20,6 +20,6 @@ public class Main {
 
         // Iniciar el servidor
         server.start();
-        System.out.println("Servidor web iniciado en http://localhost:" + puerto + "/");
+        System.out.println("***Servidor web iniciado en http://localhost:" + puerto + "/ ***");
     }
 }
