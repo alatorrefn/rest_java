@@ -12,7 +12,7 @@ public class Main {
         boolean validation = user.validateUser("DiegoA", "Diego123");
         System.out.println("Result: " + validation);
         */
-       int puerto = 8081;
+       int puerto = 8080;
         
         // Crear el servidor HTTP en el puerto indicado
         HttpServer server = HttpServer.create(new InetSocketAddress(puerto), 0);
