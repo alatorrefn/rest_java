@@ -6,12 +6,7 @@ import java.net.InetSocketAddress;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        /*    
-        System.out.println("Inicia programa");
-        UserHandler user = new UserHandler();
-        boolean validation = user.validateUser("DiegoA", "Diego123");
-        System.out.println("Result: " + validation);
-        */
+       
        int puerto = 8080;
         
         // Crear el servidor HTTP en el puerto indicado
