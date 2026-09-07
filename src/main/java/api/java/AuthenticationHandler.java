@@ -26,7 +26,6 @@ public class AuthenticationHandler implements HttpHandler {
         if (user == null || user.isEmpty() || password == null || password.isEmpty()) {
             return false;
         }
-
         // conectar a la bd
         try (Connection conexion = DriverManager.getConnection(URL, USUARIO, PASSWORD)) {
             if (conexion != null) {
@@ -46,7 +45,7 @@ public class AuthenticationHandler implements HttpHandler {
                     return true;
                 }
             } else {
-                System.out.println("La consulta no devolvió resultados.");
+                System.out.println("La consulta no obtuvo resultados.");
                 return false;
             }
 
@@ -97,7 +96,6 @@ public class AuthenticationHandler implements HttpHandler {
     }
 
     // Método auxiliar nativo para extraer el valor de una clave en un JSON plano
-    // usando Regex
     private String obtenerValorJson(String json, String clave) {
         Pattern pattern = Pattern.compile("\"" + clave + "\"\\s*:\\s*\"(.*?)\"");
         Matcher matcher = pattern.matcher(json);

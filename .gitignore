@@ -1,1 +1,3 @@
 target/
+target/classes/api/java/AuthenticationHandler.class
+target/classes/api/java/Main.class
